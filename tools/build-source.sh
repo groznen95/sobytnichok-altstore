@@ -100,7 +100,7 @@ source = {
     "apps": [{
         "name": "СобытНичок",
         "bundleIdentifier": bundle,
-        "developerName": "СобытНичок",
+        "developerName": "PozChe",
         "subtitle": "Что сейчас и что дальше",
         "localizedDescription": description,
         "iconURL": icon,

@@ -13,7 +13,7 @@
     {
       "name": "СобытНичок",
       "bundleIdentifier": "ru.sobytnichok.app",
-      "developerName": "СобытНичок",
+      "developerName": "PozChe",
       "subtitle": "Что сейчас и что дальше",
       "localizedDescription": "СобытНичок показывает состояние события, а не новости о нём.\n\nУ каждого события в каталоге — одно текущее состояние и одно следующее действие с датой: заседание назначено на вторник, слушания начнутся сегодня в 14:00, решение вынесено. Не двадцать заметок об одном и том же, а ответ на два вопроса: что сейчас и что дальше.\n\n• Каталог открыт без регистрации. Аккаунт нужен только чтобы подписаться.\n• Подписки сгруппированы по времени: сегодня, скоро, без даты, завершённые.\n• Виджет на домашнем экране и на экране блокировки сам считает время до ближайшего действия — приложение для этого открывать не нужно.\n• Напоминание приходит один раз, перед назначенным действием, и только если вы сами выбрали, за сколько предупредить. По умолчанию — не напоминать.\n• Если известен только день, приложение покажет день, а не выдуманный час. Если дата не назначена — так и скажет.\n\nЛенты здесь нет намеренно. Приложение не пытается занять ваше время: вы открываете его, когда хотите, а не когда вас разбудили.",
       "iconURL": "https://groznen95.github.io/sobytnichok-altstore/assets/icon.png",
@@ -36,12 +36,12 @@
           "height": 2868
         },
         {
-          "imageURL": "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/04-widget.png",
+          "imageURL": "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/04-reminders.png",
           "width": 1320,
           "height": 2868
         },
         {
-          "imageURL": "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/05-quiet.png",
+          "imageURL": "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/05-widget.png",
           "width": 1320,
           "height": 2868
         }
@@ -73,8 +73,8 @@
         "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/01-catalog.png",
         "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/02-event.png",
         "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/03-subscriptions.png",
-        "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/04-widget.png",
-        "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/05-quiet.png"
+        "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/04-reminders.png",
+        "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/05-widget.png"
       ]
     }
   ],
