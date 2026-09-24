@@ -73,12 +73,27 @@ description = (
     "открываете его, когда хотите, а не когда вас разбудили."
 )
 
+shots_full = json.loads(f"[{shots}]")
+notes = "Первая версия."
+icon = f"{base}/assets/icon.png"
+download = f"{base}/{ipa}"
+
+# Манифест пишется сразу в двух форматах.
+#
+# Новый AltStore читает массив `versions` и объекты в `screenshots`; SideStore
+# и клиенты постарше — плоские поля `version`/`downloadURL`/`size` и
+# `screenshotURLs` строками. Ключи, которых клиент не знает, он молча
+# пропускает, поэтому дублирование ничего не ломает, а источник открывается
+# и там, и там. Разбираться, какая именно версия стоит у человека, который
+# пишет «не работает», дороже, чем написать десять лишних строк.
 source = {
     "name": "СобытНичок",
     "identifier": "ru.sobytnichok.source",
     "subtitle": "Состояние событий, а не новости о них",
     "description": "Источник с единственным приложением — СобытНичком.",
-    "iconURL": f"{base}/assets/icon.png",
+    "iconURL": icon,
+    "sourceIconURL": icon,
+    "sourceURL": f"{base}/source.json",
     "website": "https://xn--90aogncoj5b7a.xn--p1ai",
     "tintColor": "#0A84FF",
     "nsfw": False,
@@ -88,16 +103,18 @@ source = {
         "developerName": "СобытНичок",
         "subtitle": "Что сейчас и что дальше",
         "localizedDescription": description,
-        "iconURL": f"{base}/assets/icon.png",
+        "iconURL": icon,
         "tintColor": "#0A84FF",
         "category": "news",
-        "screenshots": json.loads(f"[{shots}]"),
+
+        # Новый формат
+        "screenshots": shots_full,
         "versions": [{
             "version": version,
             "buildVersion": build,
             "date": date,
-            "localizedDescription": "Первая версия.",
-            "downloadURL": f"{base}/{ipa}",
+            "localizedDescription": notes,
+            "downloadURL": download,
             "size": int(size),
             "minOSVersion": minos,
         }],
@@ -108,7 +125,17 @@ source = {
             "entitlements": ["com.apple.security.application-groups"],
             "privacy": {},
         },
+
+        # Старый формат, те же самые числа
+        "version": version,
+        "versionDate": date,
+        "versionDescription": notes,
+        "downloadURL": download,
+        "size": int(size),
+        "minOSVersion": minos,
+        "screenshotURLs": [s["imageURL"] for s in shots_full],
     }],
+    "news": [],
 }
 
 with open("source.json", "w", encoding="utf-8") as f:

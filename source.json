@@ -4,6 +4,8 @@
   "subtitle": "Состояние событий, а не новости о них",
   "description": "Источник с единственным приложением — СобытНичком.",
   "iconURL": "https://groznen95.github.io/sobytnichok-altstore/assets/icon.png",
+  "sourceIconURL": "https://groznen95.github.io/sobytnichok-altstore/assets/icon.png",
+  "sourceURL": "https://groznen95.github.io/sobytnichok-altstore/source.json",
   "website": "https://xn--90aogncoj5b7a.xn--p1ai",
   "tintColor": "#0A84FF",
   "nsfw": false,
@@ -60,7 +62,21 @@
           "com.apple.security.application-groups"
         ],
         "privacy": {}
-      }
+      },
+      "version": "1.0",
+      "versionDate": "2026-09-24",
+      "versionDescription": "Первая версия.",
+      "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.0.ipa",
+      "size": 2193089,
+      "minOSVersion": "17.0",
+      "screenshotURLs": [
+        "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/01-catalog.png",
+        "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/02-event.png",
+        "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/03-subscriptions.png",
+        "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/04-widget.png",
+        "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/05-quiet.png"
+      ]
     }
-  ]
+  ],
+  "news": []
 }
