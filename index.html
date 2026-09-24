@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>СобытНичок для AltStore</title>
+<meta name="description" content="Источник AltStore: приложение, которое показывает состояние события, а не новости о нём.">
+<style>
+  :root {
+    --bg: #000; --surface: #131313; --hairline: #262626;
+    --text: #fff; --secondary: #b3b3b3; --tertiary: #858585; --accent: #0a84ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 16px 80px; }
+  header { display: flex; align-items: center; gap: 18px; }
+  header img { width: 88px; height: 88px; border-radius: 20px; flex: none; }
+  h1 { font-size: 34px; letter-spacing: -0.02em; margin: 0 0 4px; }
+  .sub { color: var(--secondary); margin: 0; }
+  .lead { font-size: 20px; color: var(--secondary); margin: 36px 0 0; }
+  .cta {
+    display: inline-block; margin: 28px 0 10px; padding: 16px 28px;
+    background: var(--accent); color: #fff; text-decoration: none;
+    border-radius: 16px; font-weight: 600;
+  }
+  .note { color: var(--tertiary); font-size: 14px; margin: 0; }
+  code {
+    font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    background: var(--surface); border: 1px solid var(--hairline);
+    border-radius: 8px; padding: 2px 7px; word-break: break-all;
+  }
+  h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+       color: var(--tertiary); margin: 48px 0 14px; }
+  ul { margin: 0; padding-left: 22px; color: var(--secondary); }
+  li { margin-bottom: 10px; }
+  li b { color: var(--text); font-weight: 600; }
+  .shots { display: flex; gap: 14px; overflow-x: auto; padding-bottom: 8px;
+           scroll-snap-type: x mandatory; }
+  .shots img { width: 232px; flex: none; border-radius: 16px;
+               border: 1px solid var(--hairline); scroll-snap-align: start; }
+  footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--hairline);
+           color: var(--tertiary); font-size: 14px; }
+  footer a { color: var(--accent); }
+  @media (max-width: 480px) { h1 { font-size: 28px; } .lead { font-size: 18px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="assets/icon.png" alt="">
+    <div>
+      <h1>СобытНичок</h1>
+      <p class="sub">Что сейчас и что дальше</p>
+    </div>
+  </header>
+
+  <p class="lead">
+    Показывает состояние события, а не новости о нём. У каждого события —
+    одно текущее состояние и одно следующее действие с датой.
+  </p>
+
+  <a class="cta" id="add" href="#">Добавить источник в AltStore</a>
+  <p class="note">
+    Адрес источника: <code id="url">source.json</code>
+  </p>
+
+  <h2>Что внутри</h2>
+  <ul>
+    <li><b>Каталог открыт без регистрации.</b> Аккаунт нужен только чтобы подписаться.</li>
+    <li><b>Виджет считает время сам</b> — на домашнем экране и на экране блокировки,
+        без запросов к сети и без открытия приложения.</li>
+    <li><b>Одно напоминание</b> перед назначенным действием, и только если вы сами
+        выбрали, за сколько. По умолчанию выключено.</li>
+    <li><b>Ленты нет намеренно.</b> Вы открываете приложение, когда хотите,
+        а не когда вас разбудили.</li>
+    <li><b>Точность не подделывается.</b> Известен только день — будет день,
+        а не выдуманный час. Даты нет — так и написано.</li>
+  </ul>
+
+  <h2>Как выглядит</h2>
+  <div class="shots">
+    <img src="assets/screenshots/01-catalog.png" alt="Каталог событий" loading="lazy">
+    <img src="assets/screenshots/02-event.png" alt="Экран события" loading="lazy">
+    <img src="assets/screenshots/03-subscriptions.png" alt="Мои события" loading="lazy">
+    <img src="assets/screenshots/04-widget.png" alt="Виджет" loading="lazy">
+    <img src="assets/screenshots/05-quiet.png" alt="Без потока уведомлений" loading="lazy">
+  </div>
+
+  <h2>Требования</h2>
+  <ul>
+    <li>iPhone с iOS 17 или новее.</li>
+    <li>Установленный <a href="https://altstore.io" style="color:var(--accent)">AltStore</a>.
+        Приложение он подписывает вашим Apple ID сам — в источнике лежит неподписанный .ipa.</li>
+  </ul>
+
+  <footer>
+    <a href="https://xn--90aogncoj5b7a.xn--p1ai/privacy">Политика обработки данных</a> ·
+    <a href="https://xn--90aogncoj5b7a.xn--p1ai/terms">Пользовательское соглашение</a>
+  </footer>
+
+</div>
+
+<script>
+  // Адрес считается на месте, а не вписывается в разметку: страница лежит
+  // рядом с манифестом, и любой вписанный домен разойдётся с настоящим,
+  // стоит репозиторий переименовать или перенести.
+  var url = new URL('source.json', location.href).href;
+  document.getElementById('url').textContent = url;
+  document.getElementById('add').href =
+    'altstore://source?url=' + encodeURIComponent(url);
+</script>
+</body>
+</html>
