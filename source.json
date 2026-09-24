@@ -1,0 +1,66 @@
+{
+  "name": "СобытНичок",
+  "identifier": "ru.sobytnichok.source",
+  "subtitle": "Состояние событий, а не новости о них",
+  "description": "Источник с единственным приложением — СобытНичком.",
+  "iconURL": "https://groznen95.github.io/sobytnichok-altstore/assets/icon.png",
+  "website": "https://xn--90aogncoj5b7a.xn--p1ai",
+  "tintColor": "#0A84FF",
+  "nsfw": false,
+  "apps": [
+    {
+      "name": "СобытНичок",
+      "bundleIdentifier": "ru.sobytnichok.app",
+      "developerName": "СобытНичок",
+      "subtitle": "Что сейчас и что дальше",
+      "localizedDescription": "СобытНичок показывает состояние события, а не новости о нём.\n\nУ каждого события в каталоге — одно текущее состояние и одно следующее действие с датой: заседание назначено на вторник, слушания начнутся сегодня в 14:00, решение вынесено. Не двадцать заметок об одном и том же, а ответ на два вопроса: что сейчас и что дальше.\n\n• Каталог открыт без регистрации. Аккаунт нужен только чтобы подписаться.\n• Подписки сгруппированы по времени: сегодня, скоро, без даты, завершённые.\n• Виджет на домашнем экране и на экране блокировки сам считает время до ближайшего действия — приложение для этого открывать не нужно.\n• Напоминание приходит один раз, перед назначенным действием, и только если вы сами выбрали, за сколько предупредить. По умолчанию — не напоминать.\n• Если известен только день, приложение покажет день, а не выдуманный час. Если дата не назначена — так и скажет.\n\nЛенты здесь нет намеренно. Приложение не пытается занять ваше время: вы открываете его, когда хотите, а не когда вас разбудили.",
+      "iconURL": "https://groznen95.github.io/sobytnichok-altstore/assets/icon.png",
+      "tintColor": "#0A84FF",
+      "category": "news",
+      "screenshots": [
+        {
+          "imageURL": "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/01-catalog.png",
+          "width": 1320,
+          "height": 2868
+        },
+        {
+          "imageURL": "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/02-event.png",
+          "width": 1320,
+          "height": 2868
+        },
+        {
+          "imageURL": "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/03-subscriptions.png",
+          "width": 1320,
+          "height": 2868
+        },
+        {
+          "imageURL": "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/04-widget.png",
+          "width": 1320,
+          "height": 2868
+        },
+        {
+          "imageURL": "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/05-quiet.png",
+          "width": 1320,
+          "height": 2868
+        }
+      ],
+      "versions": [
+        {
+          "version": "1.0",
+          "buildVersion": "1",
+          "date": "2026-09-24",
+          "localizedDescription": "Первая версия.",
+          "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.0.ipa",
+          "size": 2193089,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.security.application-groups"
+        ],
+        "privacy": {}
+      }
+    }
+  ]
+}
