@@ -48,12 +48,12 @@
       ],
       "versions": [
         {
-          "version": "1.0",
-          "buildVersion": "1",
-          "date": "2026-09-24",
-          "localizedDescription": "Первая версия.",
-          "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.0.ipa",
-          "size": 2193089,
+          "version": "1.1",
+          "buildVersion": "2",
+          "date": "2026-09-25",
+          "localizedDescription": "Виджет работает и без общего контейнера приложения. Под бесплатной учётной записью Apple разрешение App Group не выдаётся, и виджет был пустым; теперь он сам берёт ближайшее событие из открытого каталога и честно помечает его словом «каталог». Как только контейнер появится, вернутся личные подписки.\n\nДаты считаются по границам суток, а не по прошедшим часам: виджет писал «сегодня» там, где приложение писало «завтра».",
+          "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.ipa",
+          "size": 2220928,
           "minOSVersion": "17.0"
         }
       ],
@@ -63,11 +63,11 @@
         ],
         "privacy": {}
       },
-      "version": "1.0",
-      "versionDate": "2026-09-24",
-      "versionDescription": "Первая версия.",
-      "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.0.ipa",
-      "size": 2193089,
+      "version": "1.1",
+      "versionDate": "2026-09-25",
+      "versionDescription": "Виджет работает и без общего контейнера приложения. Под бесплатной учётной записью Apple разрешение App Group не выдаётся, и виджет был пустым; теперь он сам берёт ближайшее событие из открытого каталога и честно помечает его словом «каталог». Как только контейнер появится, вернутся личные подписки.\n\nДаты считаются по границам суток, а не по прошедшим часам: виджет писал «сегодня» там, где приложение писало «завтра».",
+      "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.ipa",
+      "size": 2220928,
       "minOSVersion": "17.0",
       "screenshotURLs": [
         "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/01-catalog.png",
