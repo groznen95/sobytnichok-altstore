@@ -8,9 +8,11 @@ import Foundation
 // или поздно разойдутся. Отличается только отделка: на маленьком квадрате
 // плоская заливка выглядит распечаткой, поэтому здесь свечение и градиенты.
 //
-//     swift tools/make-icon.swift
+//     swift tools/make-icon.swift                 # иконка источника
+//     swift tools/make-icon.swift путь/AppIcon.png # она же для приложения
 
 let size: CGFloat = 1024
+let outputPath = CommandLine.arguments.dropFirst().first ?? "assets/icon.png"
 let accent = NSColor(red: 0.04, green: 0.52, blue: 1.0, alpha: 1)
 let accentLight = NSColor(red: 0.35, green: 0.75, blue: 1.0, alpha: 1)
 
@@ -100,6 +102,6 @@ bar(77, 6, alpha: 0.45)
 
 NSGraphicsContext.restoreGraphicsState()
 
-let out = URL(fileURLWithPath: "assets/icon.png")
+let out = URL(fileURLWithPath: outputPath)
 try rep.representation(using: .png, properties: [:])!.write(to: out)
 print("готово: \(out.path) — \(Int(size))×\(Int(size))")
