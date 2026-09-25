@@ -20,10 +20,12 @@
 | `tools/build-source.sh` | Генератор манифеста |
 | `tools/make-icon.swift` | Генератор иконки |
 
-## Новая версия
+## Пересборка
 
-Поднять `MARKETING_VERSION` и `CURRENT_PROJECT_VERSION` в Xcode-проекте —
-без этого AltStore не увидит обновление. Затем:
+**Версия зафиксирована на 1.0 (сборка 1). Не поднимать, пока не попросят.**
+AltStore показывает обновление только при росте версии, поэтому пересборка
+той же версии заменяет файл, но существующей установке не предлагается —
+её нужно переустановить.
 
 ```bash
 cd ~/Desktop/sobytnichok/ios
@@ -33,14 +35,14 @@ xcodebuild -project Sobytnichok/Sobytnichok.xcodeproj -scheme Sobytnichok \
 
 rm -rf /tmp/sobyt-ipa && mkdir -p /tmp/sobyt-ipa/Payload
 cp -R /tmp/sobyt-build/Build/Products/Release-iphoneos/Sobytnichok.app /tmp/sobyt-ipa/Payload/
-(cd /tmp/sobyt-ipa && zip -qry Sobytnichok-X.Y.ipa Payload)
+(cd /tmp/sobyt-ipa && zip -qry Sobytnichok-1.0.ipa Payload)
 ```
 
 Положить `.ipa` в `releases/`, удалить прошлый и:
 
 ```bash
 ./tools/build-source.sh
-git add -A && git commit -m "Версия X.Y" && git push
+git add -A && git commit -m "Пересборка" && git push
 ```
 
 Скрипт читает версию, сборку, минимальную iOS и размер из самого `.ipa` —
