@@ -48,12 +48,12 @@
       ],
       "versions": [
         {
-          "version": "1.1.1",
-          "buildVersion": "3",
-          "date": "2026-10-06",
-          "localizedDescription": "Мелкие изменения.",
-          "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.1.ipa",
-          "size": 1664639,
+          "version": "1.1.2",
+          "buildVersion": "4",
+          "date": "2026-10-07",
+          "localizedDescription": "Новая иконка. В профиле появилась настройка прокси — на случай, когда сеть не пускает к серверу.",
+          "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.2.ipa",
+          "size": 1393486,
           "minOSVersion": "17.0"
         }
       ],
@@ -63,11 +63,11 @@
         ],
         "privacy": {}
       },
-      "version": "1.1.1",
-      "versionDate": "2026-10-06",
-      "versionDescription": "Мелкие изменения.",
-      "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.1.ipa",
-      "size": 1664639,
+      "version": "1.1.2",
+      "versionDate": "2026-10-07",
+      "versionDescription": "Новая иконка. В профиле появилась настройка прокси — на случай, когда сеть не пускает к серверу.",
+      "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.2.ipa",
+      "size": 1393486,
       "minOSVersion": "17.0",
       "screenshotURLs": [
         "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/01-catalog.png",

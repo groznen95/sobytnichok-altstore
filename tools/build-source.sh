@@ -52,7 +52,7 @@ shots=$(for f in assets/screenshots/*.png; do
 done | sed 's/,$//')
 
 python3 - "$base" "$ipa" "$size" "$version" "$build" "$minos" "$bundle" "$date" "$shots" <<'PY'
-import json, sys
+import json, os, sys
 base, ipa, size, version, build, minos, bundle, date, shots = sys.argv[1:10]
 
 description = (
@@ -126,7 +126,9 @@ features = (
 
 description = description + "\n\n" + features
 
-notes = "Мелкие изменения."
+# Заметка к версии — аргументом окружения, чтобы не править скрипт на каждый
+# выпуск: NOTES="..." ./tools/build-source.sh
+notes = os.environ.get("NOTES", "Мелкие изменения.")
 icon = f"{base}/assets/icon.png"
 download = f"{base}/{ipa}"
 
