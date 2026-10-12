@@ -22,7 +22,7 @@
 
 ## Пересборка
 
-**Версию не поднимать, пока не попросят.** Сейчас 1.1.2 (сборка 4).
+**Версию не поднимать, пока не попросят.** Сейчас 1.1.3 (сборка 5).
 AltStore показывает обновление только при росте версии: пересборка той же
 версии заменяет файл, но существующей установке не предлагается — её тогда
 нужно переустановить вручную.
@@ -39,7 +39,7 @@ xcodebuild -project Sobytnichok/Sobytnichok.xcodeproj -scheme Sobytnichok \
 
 rm -rf /tmp/sobyt-ipa && mkdir -p /tmp/sobyt-ipa/Payload
 cp -R /tmp/sobyt-build/Build/Products/Release-iphoneos/Sobytnichok.app /tmp/sobyt-ipa/Payload/
-(cd /tmp/sobyt-ipa && zip -qry Sobytnichok-1.1.2.ipa Payload)
+(cd /tmp/sobyt-ipa && zip -qry Sobytnichok-1.1.3.ipa Payload)
 ```
 
 Положить `.ipa` в `releases/`, удалить прошлый и:
