@@ -48,12 +48,12 @@
       ],
       "versions": [
         {
-          "version": "1.1.7",
-          "buildVersion": "9",
+          "version": "1.1.8",
+          "buildVersion": "10",
           "date": "2026-10-14",
-          "localizedDescription": "Сообщества: новости от сообществ, владелец публикует новости с фото прямо из приложения, на странице сообщества видно число просмотров.",
-          "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.7.ipa",
-          "size": 3006443,
+          "localizedDescription": "Можно пожаловаться на новость сообщества. Заголовки вкладок теперь по центру — раньше прилипали к краю.",
+          "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.8.ipa",
+          "size": 3010664,
           "minOSVersion": "17.0"
         }
       ],
@@ -63,11 +63,11 @@
         ],
         "privacy": {}
       },
-      "version": "1.1.7",
+      "version": "1.1.8",
       "versionDate": "2026-10-14",
-      "versionDescription": "Сообщества: новости от сообществ, владелец публикует новости с фото прямо из приложения, на странице сообщества видно число просмотров.",
-      "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.7.ipa",
-      "size": 3006443,
+      "versionDescription": "Можно пожаловаться на новость сообщества. Заголовки вкладок теперь по центру — раньше прилипали к краю.",
+      "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.8.ipa",
+      "size": 3010664,
       "minOSVersion": "17.0",
       "screenshotURLs": [
         "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/01-catalog.png",
