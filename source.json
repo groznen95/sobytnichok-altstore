@@ -48,12 +48,12 @@
       ],
       "versions": [
         {
-          "version": "1.1.5",
-          "buildVersion": "7",
-          "date": "2026-10-13",
-          "localizedDescription": "Новая вкладка «Новости»: короткие новости редакции с фото и видео. Светлая тема — Профиль → Оформление.",
-          "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.5.ipa",
-          "size": 2941062,
+          "version": "1.1.6",
+          "buildVersion": "8",
+          "date": "2026-10-14",
+          "localizedDescription": "Для редакции: в профиле у администратора — кнопка «Открыть админку».",
+          "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.6.ipa",
+          "size": 2942895,
           "minOSVersion": "17.0"
         }
       ],
@@ -63,11 +63,11 @@
         ],
         "privacy": {}
       },
-      "version": "1.1.5",
-      "versionDate": "2026-10-13",
-      "versionDescription": "Новая вкладка «Новости»: короткие новости редакции с фото и видео. Светлая тема — Профиль → Оформление.",
-      "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.5.ipa",
-      "size": 2941062,
+      "version": "1.1.6",
+      "versionDate": "2026-10-14",
+      "versionDescription": "Для редакции: в профиле у администратора — кнопка «Открыть админку».",
+      "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.6.ipa",
+      "size": 2942895,
       "minOSVersion": "17.0",
       "screenshotURLs": [
         "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/01-catalog.png",
