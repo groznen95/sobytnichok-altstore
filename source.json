@@ -48,12 +48,12 @@
       ],
       "versions": [
         {
-          "version": "1.1.6",
-          "buildVersion": "8",
+          "version": "1.1.7",
+          "buildVersion": "9",
           "date": "2026-10-14",
-          "localizedDescription": "Для редакции: в профиле у администратора — кнопка «Открыть админку».",
-          "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.6.ipa",
-          "size": 2942895,
+          "localizedDescription": "Сообщества: новости от сообществ, владелец публикует новости с фото прямо из приложения, на странице сообщества видно число просмотров.",
+          "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.7.ipa",
+          "size": 3006443,
           "minOSVersion": "17.0"
         }
       ],
@@ -63,11 +63,11 @@
         ],
         "privacy": {}
       },
-      "version": "1.1.6",
+      "version": "1.1.7",
       "versionDate": "2026-10-14",
-      "versionDescription": "Для редакции: в профиле у администратора — кнопка «Открыть админку».",
-      "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.6.ipa",
-      "size": 2942895,
+      "versionDescription": "Сообщества: новости от сообществ, владелец публикует новости с фото прямо из приложения, на странице сообщества видно число просмотров.",
+      "downloadURL": "https://groznen95.github.io/sobytnichok-altstore/releases/Sobytnichok-1.1.7.ipa",
+      "size": 3006443,
       "minOSVersion": "17.0",
       "screenshotURLs": [
         "https://groznen95.github.io/sobytnichok-altstore/assets/screenshots/01-catalog.png",
